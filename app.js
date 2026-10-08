@@ -49,7 +49,8 @@ const App = {
         this.cacheDOM();
         this.applySettings();
         this.bindEvents();
-        this.subscribeToFirebase();
+        this.renderGallery();       // show cards immediately, before Firebase responds
+        this.subscribeToFirebase(); // then update with live claim state
     },
 
     cacheDOM() {
@@ -83,23 +84,25 @@ const App = {
     // ─── Firebase ──────────────────────────────────────────
 
     subscribeToFirebase() {
-        // Real-time listener — fires immediately with current data,
-        // then again whenever any client changes a claim.
         claimsRef.on('value', snapshot => {
             claims = snapshot.val() || {};
             this.renderGallery();
 
-            // If the modal is open for a character, refresh the action button
+            // Refresh modal action button if one is open
             const openCharId = this.$modal.dataset.openCharId;
             if (openCharId && !this.$modal.classList.contains('hidden')) {
                 const char = campaignData.characters.find(c => c.id === openCharId);
                 if (char) this.refreshModalAction(char);
             }
 
-            // If GM view is visible, re-render it too
+            // Keep GM view in sync
             if (!this.$gmView.classList.contains('hidden')) {
                 this.renderGmView();
             }
+        }, error => {
+            // Firebase connection failed — log it so you can diagnose
+            console.error('Firebase connection error:', error.message);
+            console.warn('Cards are shown with local state only. Check your databaseURL in firebase-config.js and your Firebase Security Rules.');
         });
     },
 
