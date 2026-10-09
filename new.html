@@ -1,0 +1,1740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Lucida Grande'}
+    span.s2 {font: 12.0px 'Apple SD Gothic Neo'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;The Caravan Route — Oyo to Ouidah, c. 1760s&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--ink: #0d0805;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--parchment: #1c130a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--parchment-2: #281c10;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--card: #2a1f12;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--card-hover: #342818;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--card-border: rgba(201, 162, 39, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--card-border-bright: rgba(201, 162, 39, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--gold: #c9a227;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--gold-bright: #e0b04a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--gold-dim: #8a7020;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--terracotta: #b5482a;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--terracotta-dark: #8b3a1f;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--indigo: #3a5278;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--green: #4a6741;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--cream: #f0e4c8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text: #d8c9a8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text-muted: #9a8b6e;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text-dim: #6b5e47;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">* { box-sizing: border-box; }</p>
+<p class="p2"><br></p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-color: var(--parchment);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Spectral', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.7;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow-x: hidden;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Mud-cloth inspired background pattern */</p>
+<p class="p1">body::before {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-image: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'&gt;&lt;g fill='none' stroke='%23c9a227' stroke-width='0.5' opacity='0.5'&gt;&lt;path d='M0 40 L40 0 L80 40 L40 80 Z'/&gt;&lt;circle cx='40' cy='40' r='12'/&gt;&lt;path d='M0 0 L80 80' stroke-width='0.3'/&gt;&lt;path d='M80 0 L0 80' stroke-width='0.3'/&gt;&lt;/g&gt;&lt;/svg&gt;");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: 0.04;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body::after {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: radial-gradient(ellipse at center, transparent 0%, transparent 55%, rgba(0,0,0,0.5) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 1;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.font-display { font-family: 'Cinzel Decorative', serif; }</p>
+<p class="p1">.font-header { font-family: 'Cormorant Garamond', serif; }</p>
+<p class="p1">.font-body { font-family: 'Spectral', serif; }</p>
+<p class="p1">.font-mono { font-family: 'JetBrains Mono', monospace; }</p>
+<p class="p2"><br></p>
+<p class="p1">/* Hero */</p>
+<p class="p1">.hero {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.1) 0%, transparent 65%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 2;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero-glow {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: radial-gradient(circle, rgba(201, 162, 39, 0.12), transparent 70%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translate(-50%, -50%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation: pulse 6s ease-in-out infinite;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pointer-events: none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@keyframes pulse {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cinzel Decorative', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: clamp(2.5rem, 9vw, 6.5rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 900;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.05em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-shadow: 0 0 40px rgba(201, 162, 39, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.05;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 3;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero-subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: clamp(1.1rem, 2.5vw, 1.6rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.2em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 3;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero-intro {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Spectral', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: clamp(0.95rem, 1.5vw, 1.1rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 650px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 2rem auto 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 3;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.scroll-hint {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateX(-50%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation: bounce 2s infinite;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 3;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@keyframes bounce {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>50% { transform: translateX(-50%) translateY(10px); opacity: 1; }</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Navigation */</p>
+<p class="p1">.nav-bar {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 50;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(28, 19, 10, 0.96);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>backdrop-filter: blur(12px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-bottom: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.75rem 2rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.nav-inner {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-wrap: wrap;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.nav-links {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 0.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-wrap: wrap;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.nav-link {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.05em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.5rem 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-bottom: 2px solid transparent;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.nav-link:hover, .nav-link.active {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-bottom-color: var(--gold);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.gm-toggle {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.1em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.5rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>white-space: nowrap;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.gm-toggle:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--gold);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.gm-toggle.active {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Sections */</p>
+<p class="p1">.section {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 4rem 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 2;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.section-header {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 3rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cinzel Decorative', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: clamp(1.8rem, 4vw, 2.8rem);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.05em;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.section-subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.15rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.5rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.divider {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 1.5rem auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 0.75rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.divider::before, .divider::after {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: linear-gradient(to right, transparent, var(--gold-dim), transparent);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.divider-icon {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.3em;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* World cards */</p>
+<p class="p1">.world-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.world-card::before {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: linear-gradient(to right, transparent, var(--gold), transparent);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.world-card-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.2em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.5rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.world-card-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 1rem 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.world-card-text {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.75;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Detail cards */</p>
+<p class="p1">.detail-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1.5rem 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.detail-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(-4px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card-hover);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.detail-icon {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.detail-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.15rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.4rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.detail-text {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.55;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Faction cards */</p>
+<p class="p1">.faction-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left: 3px solid var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.faction-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card-hover);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.faction-name {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.35rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.faction-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.65rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.15em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.3rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.faction-text {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.5;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Route map */</p>
+<p class="p1">.route-container {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 2rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow-x: auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-container::before {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: linear-gradient(to right, transparent, var(--gold), transparent);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-svg {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-width: 820px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node circle.node-bg {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node:hover circle.node-bg {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>filter: drop-shadow(0 0 10px var(--gold));</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node.active circle.node-bg {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>fill: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>filter: drop-shadow(0 0 15px var(--gold-bright));</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node text.node-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>fill: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-anchor: middle;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: fill 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node.active text.node-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>fill: var(--gold-bright);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.route-node text.node-sub {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 9px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>fill: var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-anchor: middle;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.location-detail {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 160px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.location-detail::before {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--gold);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.location-detail-name {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 0 0.75rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-wrap: wrap;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.location-optional-tag {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.15em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.2rem 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 400;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.location-detail-text {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.15rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.75;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* NPC Cards */</p>
+<p class="p1">.npc-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-direction: column;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--card-border-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(-2px);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-header {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1.5rem 1.5rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-bottom: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-badge {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.2em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.25rem 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.badge-employer { background: rgba(201, 162, 39, 0.15); color: var(--gold-bright); border: 1px solid var(--gold-dim); }</p>
+<p class="p1">.badge-ally { background: rgba(74, 103, 65, 0.2); color: #8ab876; border: 1px solid #4a6741; }</p>
+<p class="p1">.badge-rival { background: rgba(58, 82, 120, 0.2); color: #7a9ccc; border: 1px solid #3a5278; }</p>
+<p class="p1">.badge-antagonist { background: rgba(181, 72, 42, 0.15); color: #d4683a; border: 1px solid var(--terracotta-dark); }</p>
+<p class="p1">.badge-authority { background: rgba(139, 58, 31, 0.2); color: #e07a4a; border: 1px solid var(--terracotta-dark); }</p>
+<p class="p1">.badge-optional { background: rgba(154, 139, 110, 0.12); color: var(--text-muted); border: 1px solid var(--text-dim); }</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-name {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.65rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--cream);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.1;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-role {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Spectral', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.3rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1.25rem 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex: 1;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-field {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 1rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.2em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.npc-value {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.95rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.6;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Secret reveal */</p>
+<p class="p1">.secret-block {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.secret-block.revealed {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--terracotta-dark);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(139, 58, 31, 0.12);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.secret-toggle {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.68rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.12em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.4rem 0.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.secret-toggle:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(201, 162, 39, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.secret-content {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-height: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: max-height 0.5s ease, margin-top 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-left: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left: 2px solid var(--terracotta);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.secret-content.show {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-bottom: 0.5rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Stats block */</p>
+<p class="p1">.stats-block {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(0, 0, 0, 0.25);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.75rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 1rem 0 0.5rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.stats-row {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.25rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.82rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.stat-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.05em;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.stat-value {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 500;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.stats-divider {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-top: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0.3rem 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.stat-note {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.stat-note-highlight {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: normal;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* NPC quote */</p>
+<p class="p1">.npc-quote {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.15rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.75rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left: 2px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(201, 162, 39, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.5;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Play note */</p>
+<p class="p1">.play-note {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(201, 162, 39, 0.04);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-top: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.85rem 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.5;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.play-note-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.58rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.2em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-right: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: normal;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 600;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Tunde outcomes */</p>
+<p class="p1">.outcome-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(0, 0, 0, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left: 2px solid var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0.75rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.outcome-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(0, 0, 0, 0.3);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.outcome-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.62rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.18em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 600;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.outcome-text {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.5;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* GM Tips */</p>
+<p class="p1">.tip-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left: 3px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1.25rem 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all 0.3s;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tip-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--card-hover);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left-color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateX(4px);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tip-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.68rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 0.15em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--gold-bright);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 600;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tip-text {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.98rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.6;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Footer */</p>
+<p class="p1">.footer {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 3rem 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-top: 1px solid var(--card-border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 2;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer-quote {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer-attr {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-dim);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Scroll reveal */</p>
+<p class="p1">.reveal {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(30px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: opacity 0.8s ease, transform 0.8s ease;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.reveal.visible {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(0);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* GM Mode - reveals all secrets */</p>
+<p class="p1">body.gm-mode .secret-toggle {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body.gm-mode .secret-content {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-bottom: 0.5rem;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body.gm-mode .secret-block {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: var(--terracotta-dark);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(139, 58, 31, 0.12);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Scrollbar */</p>
+<p class="p1">::-webkit-scrollbar {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar-track {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--parchment);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar-thumb {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--gold-dim);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 5px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">::-webkit-scrollbar-thumb:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--gold);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Responsive */</p>
+<p class="p1">@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-inner {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: stretch;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.faction-card {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.route-svg {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-width: 700px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 3rem 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@media (prefers-reduced-motion: reduce) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-glow { animation: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.scroll-hint { animation: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.reveal { transition: none; opacity: 1; transform: none; }</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Hero --&gt;</p>
+<p class="p1">&lt;header class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-glow"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="text-center relative" style="z-index: 3;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="font-mono text-xs tracking-[0.35em] uppercase mb-6" style="color: var(--gold);"&gt;A Tabletop RPG Campaign Sourcebook&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="hero-title"&gt;The Caravan&lt;br&gt;Route&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="hero-subtitle"&gt;Oyo to Ouidah · c. 1760s&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="divider" style="margin-top: 2rem;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="divider-icon"&gt;<span class="s1">◆</span> <span class="s1">◆</span> <span class="s1">◆</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="hero-intro"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Oyo dominates the region with cavalry and tribute. Dahomey is a disciplined, rising military state that still pays tribute to Oyo. Ouidah is a coastal port where European forts and African brokers run the Atlantic trade. Firearms are spreading. Standing armies and written contracts are slowly replacing freelancers. And somewhere on the road, a caravan moves toward the coast.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="scroll-hint"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"&gt;&lt;path d="M12 5v14M5 12l7 7 7-7"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Navigation --&gt;</p>
+<p class="p1">&lt;nav class="nav-bar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="nav-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-link active" data-section="world"&gt;The World&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-link" data-section="factions"&gt;Factions&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-link" data-section="route"&gt;The Route&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-link" data-section="npcs"&gt;Dramatis Personae&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-link" data-section="tips"&gt;GM Tips&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="gm-toggle" id="gmToggle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span id="gmToggleText"&gt;<span class="s2">▣</span> Enter GM Mode&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- World Section --&gt;</p>
+<p class="p1">&lt;section id="world" class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;The World in Brief&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="section-subtitle"&gt;Serious. Grounded. Human.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="divider"&gt;&lt;span class="divider-icon"&gt;<span class="s1">◆</span>&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-2 gap-6 mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="world-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="world-card-label"&gt;The Big Picture&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="world-card-title"&gt;Power and Tribute&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="world-card-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Oyo is the dominant power of the region, with the cavalry, tribute states, and political clout. Dahomey is a disciplined, rising military state that still pays tribute to Oyo. Ouidah is a coastal port under Dahomey control, where European forts and African brokers run the Atlantic trade. Firearms are spreading, and standing armies and written contracts are slowly replacing freelancers.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="world-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="world-card-label"&gt;Tone&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="world-card-title"&gt;Serious, Grounded, Human&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="world-card-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>No monsters, no spectacle. The slave trade is the moral weight of the story, shown through people's reactions, objects, and choices rather than graphic scenes. Every character has reasons. Every choice has weight.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="reveal" style="text-align: center; margin-bottom: 2rem;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 class="font-header text-2xl font-bold" style="color: var(--cream); font-family: 'Cormorant Garamond', serif;"&gt;Everyday Details to Drop In&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="color: var(--text-muted); font-style: italic; margin-top: 0.25rem;"&gt;The texture of the world&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid grid-cols-2 md:grid-cols-4 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detail-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"&gt;&lt;ellipse cx="12" cy="9" rx="6" ry="4"/&gt;&lt;ellipse cx="12" cy="15" rx="6" ry="4"/&gt;&lt;path d="M6 9c0 3 3 6 6 6s6-3 6-6"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-title"&gt;Money&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-text"&gt;Cowrie shells, counted in strings.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detail-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"&gt;&lt;path d="M12 2v20M4 6l8 4 8-4M4 14l8 4 8-4"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-title"&gt;Food&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-text"&gt;Yam, millet in the north, palm oil, dried fish, kola nuts.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detail-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"&gt;&lt;circle cx="8" cy="5" r="2"/&gt;&lt;path d="M8 7v6m0 0l-3 8m3-8l3 8M14 11h6m-6 0V5m6 6V5"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-title"&gt;Travel&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-text"&gt;Porters carrying loads on their heads, a few donkeys in the northern stretch, canoes on rivers.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detail-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"&gt;&lt;path d="M12 4v10M8 8c0 2 2 4 4 4s4-2 4-4M12 18v3M9 21h6"/&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-title"&gt;Greetings&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="detail-text"&gt;Respect matters. People greet elders first, and a poor greeting is an insult.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Factions Section --&gt;</p>
+<p class="p1">&lt;section id="factions" class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Factions&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="section-subtitle"&gt;Who wants what, and how they meet the party&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="divider"&gt;&lt;span class="divider-icon"&gt;<span class="s1">◆</span>&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faction-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="faction-name"&gt;The Agent's Network&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;"&gt;Silent partners. Quiet money.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label"&gt;What They Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Move goods to the coast quietly and profitably.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label" style="margin-top: 0.75rem;"&gt;How They Treat the Party&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Pays well, hides everything.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faction-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="faction-name"&gt;The Iron Leopards&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;"&gt;Rival company — the "future."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label"&gt;What They Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Steady contracts and reputation.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label" style="margin-top: 0.75rem;"&gt;How They Treat the Party&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Polite, patronizing — the "future" of hired fighters.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faction-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="faction-name"&gt;The Raiders&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;"&gt;Not evil. Desperate.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label"&gt;What They Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Stop the caravan, protect their kin.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label" style="margin-top: 0.75rem;"&gt;How They Treat the Party&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Desperate, not evil.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faction-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="faction-name"&gt;Dahomey's Military&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;"&gt;Order above all.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label"&gt;What They Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Order, tribute, control of the route.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label" style="margin-top: 0.75rem;"&gt;How They Treat the Party&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Disciplined, wary of Oyo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faction-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="faction-name"&gt;Ouidah's Brokers&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;"&gt;The coastal middlemen.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label"&gt;What They Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Profit.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="faction-label" style="margin-top: 0.75rem;"&gt;How They Treat the Party&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="faction-text"&gt;Courteous, practiced, cold.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Route Section --&gt;</p>
+<p class="p1">&lt;section id="route" class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;The Route&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="section-subtitle"&gt;From the savanna to the sea&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="divider"&gt;&lt;span class="divider-icon"&gt;<span class="s1">◆</span>&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="route-container reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;svg class="route-svg" viewBox="0 0 1200 350" xmlns="http://www.w3.org/2000/svg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Savanna grass --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g opacity="0.25"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 200 120 q 3 -12 6 0 M 215 125 q 3 -12 6 0 M 230 115 q 3 -12 6 0 M 245 122 q 3 -12 6 0 M 260 118 q 3 -12 6 0 M 275 125 q 3 -12 6 0 M 290 115 q 3 -12 6 0" stroke="#c9a227" fill="none" stroke-width="1"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Baobab trees --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g opacity="0.35"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="180" cy="100" r="10" fill="#4a6741"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;rect x="177" y="108" width="6" height="8" fill="#6b5e47"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="340" cy="95" r="12" fill="#4a6741"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;rect x="337" y="105" width="6" height="8" fill="#6b5e47"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- River --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g opacity="0.4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 440 160 Q 460 210, 480 260" stroke="#3a5278" fill="none" stroke-width="3" opacity="0.6"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 470 195 Q 490 220, 500 255" stroke="#3a5278" fill="none" stroke-width="2" opacity="0.5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text x="490" y="280" fill="#3a5278" font-size="11" font-style="italic" opacity="0.7" font-family="Cormorant Garamond"&gt;river&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Forest hint --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g opacity="0.3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 570 80 L 575 65 L 580 80 Z M 585 75 L 590 60 L 595 75 Z M 600 80 L 605 62 L 610 80 Z M 615 75 L 620 58 L 625 75 Z" fill="#4a6741"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Coast --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g opacity="0.4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 1040 210 Q 1080 220, 1120 210 Q 1160 200, 1200 215" stroke="#3a5278" fill="none" stroke-width="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 1040 225 Q 1080 235, 1120 225 Q 1160 215, 1200 230" stroke="#3a5278" fill="none" stroke-width="1.5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;path d="M 1040 240 Q 1080 248, 1120 240 Q 1160 233, 1200 245" stroke="#3a5278" fill="none" stroke-width="1"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text x="1150" y="195" fill="#3a5278" font-size="11" font-style="italic" opacity="0.7" font-family="Cormorant Garamond"&gt;the sea&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Main route path --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;path d="M 80 180 Q 150 160, 220 150 Q 290 170, 350 185 Q 410 200, 470 195 Q 530 190, 620 195 Q 720 200, 800 210 Q 900 222, 1000 230 Q 1040 235, 1080 240"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>stroke="#c9a227" stroke-width="2" fill="none" stroke-dasharray="7,5" opacity="0.55"/&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Optional path to forest --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;path d="M 500 195 Q 550 155, 600 115"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>stroke="#9a8b6e" stroke-width="1.5" fill="none" stroke-dasharray="3,6" opacity="0.5"/&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Location nodes --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g class="route-node" data-location="oyo" onclick="selectLocation('oyo')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="node-bg" cx="80" cy="180" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="80" cy="180" r="5" fill="#c9a227" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-label" x="80" y="155"&gt;Oyo Market Town&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g class="route-node" data-location="savanna" onclick="selectLocation('savanna')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="node-bg" cx="290" cy="160" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="290" cy="160" r="5" fill="#c9a227" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-label" x="290" y="135"&gt;The Savanna&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g class="route-node" data-location="river" onclick="selectLocation('river')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="node-bg" cx="480" cy="195" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="480" cy="195" r="5" fill="#c9a227" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-label" x="480" y="225"&gt;River Village&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g class="route-node" data-location="forest" onclick="selectLocation('forest')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="node-bg" cx="600" cy="115" r="12" fill="#2a1f12" stroke="#9a8b6e" stroke-width="2" stroke-dasharray="3,2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="600" cy="115" r="4" fill="#9a8b6e" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-label" x="600" y="95" fill="#9a8b6e"&gt;Forest Village&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-sub" x="600" y="135"&gt;optional&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g class="route-node" data-location="dahomey" onclick="selectLocation('dahomey')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="node-bg" cx="800" cy="210" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="800" cy="210" r="5" fill="#c9a227" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-label" x="800" y="240"&gt;Dahomey Clearing&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;g class="route-node" data-location="ouidah" onclick="selectLocation('ouidah')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle class="node-bg" cx="1080" cy="240" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;circle cx="1080" cy="240" r="5" fill="#c9a227" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;text class="node-label" x="1080" y="270"&gt;Ouidah&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/g&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="location-detail reveal" id="locationDetail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="color: var(--text-muted); font-style: italic; text-align: center; margin: 0;"&gt;Click a location on the map to see its detail.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- NPCs Section --&gt;</p>
+<p class="p1">&lt;section id="npcs" class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Dramatis Personae&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="section-subtitle"&gt;The people the party will meet&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="divider"&gt;&lt;span class="divider-icon"&gt;<span class="s1">◆</span>&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="reveal" style="text-align: center; color: var(--text-muted); font-style: italic; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Each card holds a secret. Click &lt;span style="color: var(--gold);"&gt;"Reveal Secret"&lt;/span&gt; to see what the GM knows — or enter GM Mode at the top to reveal everything at once.</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid md:grid-cols-2 gap-6"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- AJANI --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-employer"&gt;Employer&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Ajani&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Agent — the party's employer&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Look&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Well-dressed, rings on his fingers, always wiping his hands.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Get paid and keep his name out of it.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Fear / Secret&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="secret-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secret-toggle" onclick="toggleSecret(this)"&gt;<span class="s2">▣</span> Reveal Secret&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="secret-content"&gt;He owes a large debt to the Ouidah recipient and is using the caravan to settle it.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Smooth, friendly, quick to say "of course, of course." Gets sharper when pressed.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Health&lt;/span&gt;&lt;span class="stat-value"&gt;8&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Defense&lt;/span&gt;&lt;span class="stat-value"&gt;10&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Attack Bonus&lt;/span&gt;&lt;span class="stat-value"&gt;+1&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Damage&lt;/span&gt;&lt;span class="stat-value"&gt;2&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Guards (3–4)&lt;/span&gt;&lt;span class="stat-value"&gt;8 / 11 / +3 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="stat-note"&gt;Prefers his guards to fight.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>He's not a monster. He tells himself it's just business, which is the point.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ADUNNI --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-ally"&gt;Ally&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Adunni&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Healer — a mysterious healer who joins the group&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;To find her son Tunde.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Fear / Secret&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="secret-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secret-toggle" onclick="toggleSecret(this)"&gt;<span class="s2">▣</span> Reveal Secret&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="secret-content"&gt;Her remedies work faster than they should, and she doesn't know why. She's afraid it will cost her something.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Quiet, warm, proverbs half-spoken. Never explains herself.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Health&lt;/span&gt;&lt;span class="stat-value"&gt;8&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Defense&lt;/span&gt;&lt;span class="stat-value"&gt;10&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Attack Bonus&lt;/span&gt;&lt;span class="stat-value"&gt;+0&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="stat-note"&gt;&lt;span class="stat-note-highlight"&gt;She heals, doesn't fight.&lt;/span&gt; Her touch restores 3 Health, once per scene.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Never confirm or deny the unexplained. Let each player decide what they saw.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- TUNDE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-ally"&gt;Ally&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Tunde&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;Adunni's Son — the reason for the journey&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Survive.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Tired, guarded, brief sentences.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Outcomes — Choose Based on the Group's Tone&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="outcome-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="outcome-label"&gt;Hopeful&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="outcome-text"&gt;Held in a pen and can be freed.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="outcome-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="outcome-label"&gt;Bittersweet&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="outcome-text"&gt;Already shipped, but a broker knows which ship. The players give Adunni a name and a direction.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="outcome-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="outcome-label"&gt;Complex&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="outcome-text"&gt;Working for the brokers to stay alive, and ashamed to face his mother.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- FOLARIN --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-antagonist"&gt;Antagonist&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Folarin&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Raider Leader — leads the savanna ambush&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Stop the caravan before it reaches the coast.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Fear / Secret&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="secret-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secret-toggle" onclick="toggleSecret(this)"&gt;<span class="s2">▣</span> Reveal Secret&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="secret-content"&gt;Her village's people were taken by a caravan like this one. She recognized the agent's seal.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Angry, direct, stops short of explaining.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Leader (Folarin)&lt;/span&gt;&lt;span class="stat-value"&gt;10 / 12 / +4 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Raiders (4–5)&lt;/span&gt;&lt;span class="stat-value"&gt;6 / 11 / +3 / 2&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="stat-note"&gt;They flee after two of their number fall.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>If a player captures or talks to her, she can later appear at Ouidah as an ally, or as a witness against the agent.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CAPTAIN OYENIYI --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-rival"&gt;Rival&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Captain Oyeniyi&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Iron Leopards — Captain, the "future"&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Look&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Smiles often, speaks like a recruiter. Tidy gear, matching cloth bands.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Steady contracts and reputation. Genuinely believes in discipline and pay.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Health&lt;/span&gt;&lt;span class="stat-value"&gt;12&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Defense&lt;/span&gt;&lt;span class="stat-value"&gt;12&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Attack Bonus&lt;/span&gt;&lt;span class="stat-value"&gt;+4&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Damage&lt;/span&gt;&lt;span class="stat-value"&gt;3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Other Leopards (3)&lt;/span&gt;&lt;span class="stat-value"&gt;8 / 11 / +3 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>The Captain should feel respectable, not cartoonish. The contrast with the players is the point.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- KUNLE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-rival"&gt;Rival&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Kunle&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Iron Leopards — the uneasy member&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Look&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Young, newer to the company.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;To belong — but he notices what they're protecting at Ouidah and can't ignore it.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Possible Arcs&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Can be won over. Can tip off the players. Can quietly look away.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Health&lt;/span&gt;&lt;span class="stat-value"&gt;10&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Defense&lt;/span&gt;&lt;span class="stat-value"&gt;11&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Attack Bonus&lt;/span&gt;&lt;span class="stat-value"&gt;+3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Damage&lt;/span&gt;&lt;span class="stat-value"&gt;3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- BABA OGUNSOLA --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-ally"&gt;Waystation&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Baba Ogunsola&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Fisherman — at the river village&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Be left alone, and keep his family safe.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Weathered, slow to trust, short sentences.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-quote"&gt;"We've seen caravans like yours."&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>He'll help for a fair price or a kindness, not for threats. A player who treats him with respect gets the canoes at a discount.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- IYA AGBA --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-optional"&gt;Optional&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Iya Agba&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Forest Elder — optional scene&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;To warn without accusing.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Gentle, proverb-heavy, seemingly unhurried.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-quote"&gt;"Some things cannot be washed off."&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>She gives the party a small gift (food, a charm, a piece of cloth), which makes later choices hit harder.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CAPTAIN GBENU --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-authority"&gt;Authority&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Captain Gbenu&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Dahomey Commander — leads the standoff. An Agojie officer.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Keep order and avoid an incident with Oyo.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Fear / Secret&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="secret-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secret-toggle" onclick="toggleSecret(this)"&gt;<span class="s2">▣</span> Reveal Secret&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="secret-content"&gt;She dislikes what Ouidah has become but follows orders.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Short, formal, no wasted words. Never raises her voice.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Commander (Gbenu)&lt;/span&gt;&lt;span class="stat-value"&gt;12 / 13 / +5 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Agojie (2–3)&lt;/span&gt;&lt;span class="stat-value"&gt;10 / 13 / +5 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Soldiers (6–8)&lt;/span&gt;&lt;span class="stat-value"&gt;8 / 12 / +4 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Make her impressive, not cruel. The party should come away feeling small, not insulted. The Agojie were professional soldiers within a kingdom that took part in the trade, and that can be shown by what she does and doesn't say.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SENHOR DUARTE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-authority"&gt;Authority&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;Senhor Duarte&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;The Ouidah Recipient — an Afro-Portuguese broker, one of the coastal middlemen&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;The cargo, the papers, and no loose ends.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Voice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;Courteous, speaks several languages, offers food and water as if hospitality hides everything.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Fear / Secret&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="secret-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secret-toggle" onclick="toggleSecret(this)"&gt;<span class="s2">▣</span> Reveal Secret&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="secret-content"&gt;He expects the agent to be late with the debt. If the players expose the agent, Duarte is likely to protect himself first.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="stats-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Health&lt;/span&gt;&lt;span class="stat-value"&gt;8&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Defense&lt;/span&gt;&lt;span class="stat-value"&gt;10&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Attack Bonus&lt;/span&gt;&lt;span class="stat-value"&gt;+1&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Damage&lt;/span&gt;&lt;span class="stat-value"&gt;2&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stats-row"&gt;&lt;span class="stat-label"&gt;Guards (3–4)&lt;/span&gt;&lt;span class="stat-value"&gt;8 / 11 / +3 / 3&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- YOVOGAN'S OFFICIAL --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="npc-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="npc-badge badge-optional"&gt;Optional&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="npc-name"&gt;The Yovogan's Official&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="npc-role"&gt;Dahomey's representative in Ouidah&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="npc-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Role&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;A tidy, tired bureaucrat who checks papers and collects fees.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="npc-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-label"&gt;Use&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="npc-value"&gt;A neutral authority the players can appeal to, bribe, or avoid.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="play-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="play-note-label"&gt;GM Note&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>If a player tries to expose the agent, the official may care more about the paperwork than the crimes, which is its own grim lesson.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- GM Tips Section --&gt;</p>
+<p class="p1">&lt;section id="tips" class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Quick Tips for Running NPCs&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="section-subtitle"&gt;For the Game Master's eyes&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="divider"&gt;&lt;span class="divider-icon"&gt;<span class="s1">◆</span>&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tip-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tip-label"&gt;One Detail, One Line&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="tip-text"&gt;Give each NPC one physical detail and one line of speech. That's enough to be memorable.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tip-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tip-label"&gt;Let Them Want&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="tip-text"&gt;Let NPCs want things. If the players don't engage, they still act.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tip-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tip-label"&gt;Don't Show Every Secret&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="tip-text"&gt;Reveal them through objects and reactions, not exposition.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tip-card reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="tip-label"&gt;Let Players Change NPCs&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="tip-text"&gt;If someone shows Folarin respect, she should treat them differently later.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Footer --&gt;</p>
+<p class="p1">&lt;footer class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="footer-quote"&gt;"Some things cannot be washed off."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="footer-attr"&gt;— Iya Agba, Forest Elder&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">// === Navigation ===</p>
+<p class="p1">const navLinks = document.querySelectorAll('.nav-link');</p>
+<p class="p1">const sections = document.querySelectorAll('.section');</p>
+<p class="p2"><br></p>
+<p class="p1">navLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>link.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const targetId = link.dataset.section;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const target = document.getElementById(targetId);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (target) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const offset = 60;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">// Active section on scroll</p>
+<p class="p1">function updateActiveNav() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const scrollPos = window.scrollY + 120;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let currentId = '';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>sections.forEach(section =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (section.offsetTop &lt;= scrollPos &amp;&amp; section.offsetTop + section.offsetHeight &gt; scrollPos) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>currentId = section.id;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>navLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>link.classList.toggle('active', link.dataset.section === currentId);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}</p>
+<p class="p1">window.addEventListener('scroll', updateActiveNav, { passive: true });</p>
+<p class="p2"><br></p>
+<p class="p1">// === Secret Reveal ===</p>
+<p class="p1">function toggleSecret(button) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const content = button.nextElementSibling;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const isShown = content.classList.contains('show');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (isShown) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content.classList.remove('show');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.textContent = '<span class="s2">▣</span> Reveal Secret';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.parentElement.classList.remove('revealed');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content.classList.add('show');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.textContent = '<span class="s1">▼</span> Secret Revealed';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.parentElement.classList.add('revealed');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// === GM Mode ===</p>
+<p class="p1">const gmToggle = document.getElementById('gmToggle');</p>
+<p class="p1">const gmToggleText = document.getElementById('gmToggleText');</p>
+<p class="p2"><br></p>
+<p class="p1">gmToggle.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const body = document.body;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const isGM = body.classList.toggle('gm-mode');</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (isGM) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gmToggle.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gmToggleText.textContent = '<span class="s1">▼</span> GM Mode Active';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.secret-block').forEach(block =&gt; block.classList.add('revealed'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.secret-content').forEach(content =&gt; content.classList.add('show'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.secret-toggle').forEach(button =&gt; button.textContent = '<span class="s1">▼</span> Secret Revealed');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gmToggle.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gmToggleText.textContent = '<span class="s2">▣</span> Enter GM Mode';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.secret-block').forEach(block =&gt; block.classList.remove('revealed'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.secret-content').forEach(content =&gt; content.classList.remove('show'));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.secret-toggle').forEach(button =&gt; button.textContent = '<span class="s2">▣</span> Reveal Secret');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">// === Route Map ===</p>
+<p class="p1">const locations = {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>oyo: {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name: 'The Oyo Market Town',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: 'Red dust, a huge silk-cotton tree shading the square, drummers practicing, traders shouting prices. Sells everything except work for hired fighters.',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>optional: false</p>
+<p class="p1"><span class="Apple-converted-space">  </span>},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>savanna: {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name: 'The Savanna',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: 'Golden grass taller than a person, scattered baobabs, heat that makes the horizon shimmer. Great for ambushes.',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>optional: false</p>
+<p class="p1"><span class="Apple-converted-space">  </span>},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>river: {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name: 'The River Village',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: 'Mud-brick houses, drying fish racks, and smoke where roofs used to be. Canoes pulled up on the bank.',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>optional: false</p>
+<p class="p1"><span class="Apple-converted-space">  </span>},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>forest: {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name: 'The Forest Village',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: 'Cool green shade, the smell of woodsmoke and palm wine, children staring at strangers.',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>optional: true</p>
+<p class="p1"><span class="Apple-converted-space">  </span>},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>dahomey: {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name: 'The Dahomey Clearing',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: 'A wide, deliberately cleared stretch of ground where the soldiers stand in ranks. Silent, orderly, no shouting. The quiet is the threat.',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>optional: false</p>
+<p class="p1"><span class="Apple-converted-space">  </span>},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>ouidah: {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name: 'Ouidah',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text: 'Salt wind, whitewashed European forts, shouting brokers, and a long road to the beach that everyone avoids looking at.',</p>
+<p class="p1"><span class="Apple-converted-space">    </span>optional: false</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">function selectLocation(id) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const loc = locations[id];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!loc) return;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll('.route-node').forEach(node =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>node.classList.toggle('active', node.dataset.location === id);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>const detail = document.getElementById('locationDetail');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const optionalTag = loc.optional<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>? '&lt;span class="location-optional-tag"&gt;Optional Scene&lt;/span&gt;'<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>: '';</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>detail.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 class="location-detail-name"&gt;${loc.name}${optionalTag}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="location-detail-text"&gt;${loc.text}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// === Scroll Reveal ===</p>
+<p class="p1">const revealObserver = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>entry.target.classList.add('visible');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });</p>
+<p class="p2"><br></p>
+<p class="p1">document.querySelectorAll('.reveal').forEach(el =&gt; revealObserver.observe(el));</p>
+<p class="p2"><br></p>
+<p class="p1">// Initialize with first location selected</p>
+<p class="p1">selectLocation('oyo');</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

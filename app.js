@@ -145,18 +145,13 @@ const App = {
         this.$headerTitle   = document.getElementById('header-title');
         this.$headerSub     = document.getElementById('header-subtitle');
         this.$galleryView   = document.getElementById('gallery-view');
-        this.$gmView        = document.getElementById('gm-view');
         this.$grid          = document.getElementById('character-grid');
         this.$modal         = document.getElementById('character-modal');
         this.$modalPortrait = document.getElementById('modal-portrait');
         this.$modalBody     = document.getElementById('modal-body');
         this.$closeModal    = document.getElementById('close-modal');
-        this.$gmToggle      = document.getElementById('gm-toggle-btn');
-        this.$gmChars       = document.getElementById('gm-chars');
-        this.$gmNpcs        = document.getElementById('gm-npcs');
         this.$tabBtns       = document.querySelectorAll('.tab-btn');
         this.$tabContents   = document.querySelectorAll('.tab-content');
-        this.$gmNotes       = document.getElementById('gm-notes-area');
     },
 
     applySettings() {
@@ -175,7 +170,6 @@ const App = {
             claims = snapshot.val() || {};
             this.renderGallery();
             this.syncOpenModal();
-            if (!this.$gmView.classList.contains('hidden')) this.renderGmView();
         }, err => console.error('Firebase claims error:', err.message));
 
         characterNamesRef.on('value', snapshot => {
@@ -187,7 +181,6 @@ const App = {
                 const el = document.getElementById('modal-char-name');
                 if (el) el.textContent = characterNames[openId] || '—';
             }
-            if (!this.$gmView.classList.contains('hidden')) this.renderGmView();
         }, err => console.error('Firebase characterNames error:', err.message));
     },
 
@@ -209,7 +202,6 @@ const App = {
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape') this.closeModal();
         });
-        this.$gmToggle.addEventListener('click', () => this.handleGmToggle());
 
         this.$tabBtns.forEach(btn => {
             btn.addEventListener('click', e => {
@@ -515,63 +507,7 @@ const App = {
         if (container) container.innerHTML = buildItemsHtml(char);
     },
 
-    // ── GM View ───────────────────────────────────────────────
-
-    handleGmToggle() {
-        /*
-         * ⚠️  SECURITY NOTE — client-side passphrase only.
-         * This prevents accidental clicks, not determined snooping.
-         * Anyone who opens DevTools or reads source can see all
-         * GM secrets. Do not store truly private information here.
-         */
-        const isGmOpen = !this.$gmView.classList.contains('hidden');
-        if (isGmOpen) {
-            this.$gmView.classList.add('hidden');
-            this.$galleryView.classList.remove('hidden');
-            return;
-        }
-        const pass = prompt('GM passphrase:');
-        if (!pass || pass.toLowerCase().trim() !== 'mango') {
-            if (pass !== null) alert('Incorrect passphrase.');
-            return;
-        }
-        this.$galleryView.classList.add('hidden');
-        this.$gmView.classList.remove('hidden');
-        this.renderGmView();
-    },
-
-    renderGmView() {
-        this.$gmChars.innerHTML = campaignData.characters.map(char => {
-            const claimerName = claims[char.id];
-            const charName    = characterNames[char.id];
-            const nameDisplay = charName
-                ? `${charName} (played by ${claimerName})`
-                : claimerName
-                    ? `Unnamed — claimed by ${claimerName}`
-                    : 'Unclaimed';
-
-            return `
-            <div class="gm-card">
-                <h3>${char.icon} ${char.suggestedName || char.id}</h3>
-                <p><strong>Status:</strong> ${nameDisplay}</p>
-                <p><strong>Concept:</strong> ${char.concept}</p>
-                <div class="gm-secret-block">
-                    <strong>Secret</strong>
-                    <p>${char.gmSecrets}</p>
-                    <strong style="margin-top:0.6rem;display:block">Hooks</strong>
-                    <p>${char.gmHooks}</p>
-                </div>
-            </div>`;
-        }).join('');
-
-        this.$gmNpcs.innerHTML = campaignData.npcs.map(npc => `
-            <div class="gm-card">
-                <h3>${npc.name}</h3>
-                <p><strong>Role:</strong> ${npc.role}</p>
-                <p><strong>Stats:</strong> ${npc.stats}</p>
-                <p><strong>Notes:</strong> ${npc.notes}</p>
-            </div>`).join('');
-    }
+    // (GM View logic moved to gm.html)
 };
 
 document.addEventListener('DOMContentLoaded', () => App.init());

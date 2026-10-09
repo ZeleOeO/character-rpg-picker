@@ -257,31 +257,91 @@ const campaignData = {
     npcs: [
         {
             id:    "npc_1",
-            name:  "The Agent",
+            name:  "Ajani (The Agent)",
             role:  "Employer — funding and directing the job",
-            stats: "Presence 3 · Wits 2 · Stress: □ □ □",
-            notes: "Polite, businesslike, keeps real motives off the table. Gets terse if the schedule slips. The cargo is the real agenda."
+            stats: "Health 8 · Defense 10 · Attack +1 · Damage 2",
+            notes: "Well-dressed, rings on his fingers, always wiping his hands. Smooth and friendly, quick to say 'of course.' Gets sharper when pressed. Not a monster, just business.",
+            secret: "He owes a large debt to the Ouidah recipient and is using the caravan to settle it."
         },
         {
             id:    "npc_2",
-            name:  "The Gatekeeper",
-            role:  "Toll Collector / Local Authority",
-            stats: "Presence 2 · Might 2 · Stress: □ □",
-            notes: "Greedy but not cruel. Raises the toll if the cargo looks valuable. Can be bribed or charmed."
+            name:  "Adunni",
+            role:  "Camp Follower / Healer",
+            stats: "Health 8 · Defense 10 · Attack +0",
+            notes: "Quiet, warm, proverbs half-spoken. Never explains herself. She heals, doesn't fight. Her touch restores 3 Health once per scene.",
+            secret: "Her remedies work faster than they should, and she doesn't know why. She's afraid it will cost her something. Seeking her son, Tunde."
         },
         {
             id:    "npc_3",
-            name:  "Adunni",
-            role:  "Camp Follower / Healer",
-            stats: "Insight 3 · Presence 2 · Stress: □ □",
-            notes: "Travels with caravans. Their remedies work faster than any herb should, and they deflect questions about it. Not dangerous — but not what they appear."
+            name:  "Tunde",
+            role:  "Adunni's Son",
+            stats: "—",
+            notes: "Tired, guarded, brief sentences. Outcome depends on the party: held in a pen (hopeful), already shipped (bittersweet), or working for brokers to stay alive (complex).",
+            secret: "The driving reason for Adunni's journey."
         },
         {
             id:    "npc_4",
-            name:  "Iron Leopards Leader",
-            role:  "Mercenary Company Commander",
-            stats: "Might 3 · Presence 2 · Stress: □ □ □ □",
-            notes: "Commands a rival mercenary unit. Knows Ayodele from the old Oyo reorganization. May recruit, threaten, or both."
+            name:  "Folarin",
+            role:  "The Raider Leader",
+            stats: "Health 10 · Defense 12 · Attack +4 · Damage 3",
+            notes: "Angry, direct, stops short of explaining. Leads the savanna ambush. If respected, she can later appear at Ouidah as an ally or witness.",
+            secret: "Her village's people were taken by a caravan like this one. She recognized the agent's seal."
+        },
+        {
+            id:    "npc_5",
+            name:  "Captain Oyeniyi",
+            role:  "Iron Leopards Commander",
+            stats: "Health 12 · Defense 12 · Attack +4 · Damage 3",
+            notes: "Smiles often, speaks like a recruiter. Tidy gear. Genuinely believes in discipline and pay. Represents the 'future' of hired fighters.",
+            secret: "His company is protecting something dark at Ouidah, and he treats it simply as a contract."
+        },
+        {
+            id:    "npc_6",
+            name:  "Kunle",
+            role:  "Iron Leopards Member",
+            stats: "Health 10 · Defense 11 · Attack +3 · Damage 3",
+            notes: "Young, newer to the company. Notices what they're protecting at Ouidah and can't ignore it.",
+            secret: "Can be won over, can tip off the players, or can quietly look away depending on the party's actions."
+        },
+        {
+            id:    "npc_7",
+            name:  "Baba Ogunsola",
+            role:  "The Fisherman",
+            stats: "—",
+            notes: "Weathered, slow to trust, short sentences. Wants to be left alone and keep his family safe. 'We've seen caravans like yours.'",
+            secret: "Will help for a fair price or kindness, not threats. Gives canoes at a discount if respected."
+        },
+        {
+            id:    "npc_8",
+            name:  "Iya Agba",
+            role:  "The Forest Elder (Optional)",
+            stats: "—",
+            notes: "Gentle, proverb-heavy, seemingly unhurried. 'Some things cannot be washed off.' Gives the party a small gift.",
+            secret: "Wants to warn without accusing. Her gift makes later choices hit harder."
+        },
+        {
+            id:    "npc_9",
+            name:  "Captain Gbenu",
+            role:  "Dahomey Commander (Agojie Officer)",
+            stats: "Health 12 · Defense 13 · Attack +5 · Damage 3",
+            notes: "Short, formal, no wasted words. Impressive, not cruel. Leads the standoff. Wants to keep order and avoid an incident with Oyo.",
+            secret: "She dislikes what Ouidah has become but follows orders professionally."
+        },
+        {
+            id:    "npc_10",
+            name:  "Senhor Duarte",
+            role:  "The Ouidah Recipient (Broker)",
+            stats: "Health 8 · Defense 10 · Attack +1 · Damage 2",
+            notes: "Afro-Portuguese broker. Courteous, speaks several languages, offers hospitality to hide everything. Wants the cargo and papers.",
+            secret: "Expects Ajani to be late with the debt. If the players expose the agent, Duarte will protect himself first."
+        },
+        {
+            id:    "npc_11",
+            name:  "The Yovogan's Official",
+            role:  "Dahomey Representative (Optional)",
+            stats: "—",
+            notes: "A tidy, tired bureaucrat who checks papers and collects fees. A neutral authority.",
+            secret: "Cares more about the paperwork than the crimes. A grim lesson if the players try to appeal to him."
         }
     ]
 };

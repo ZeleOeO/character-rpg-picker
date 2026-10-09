@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Caravan Route — Oyo to Ouidah, c. 1760s</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root {
+  --ink: #0d0805;
+  --parchment: #1c130a;
+  --parchment-2: #281c10;
+  --card: #2a1f12;
+  --card-hover: #342818;
+  --card-border: rgba(201, 162, 39, 0.2);
+  --card-border-bright: rgba(201, 162, 39, 0.5);
+  --gold: #c9a227;
+  --gold-bright: #e0b04a;
+  --gold-dim: #8a7020;
+  --terracotta: #b5482a;
+  --terracotta-dark: #8b3a1f;
+  --indigo: #3a5278;
+  --green: #4a6741;
+  --cream: #f0e4c8;
+  --text: #d8c9a8;
+  --text-muted: #9a8b6e;
+  --text-dim: #6b5e47;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--parchment);
+  color: var(--text);
+  font-family: 'Spectral', serif;
+  margin: 0;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Mud-cloth inspired background pattern */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23c9a227' stroke-width='0.5' opacity='0.5'><path d='M0 40 L40 0 L80 40 L40 80 Z'/><circle cx='40' cy='40' r='12'/><path d='M0 0 L80 80' stroke-width='0.3'/><path d='M80 0 L0 80' stroke-width='0.3'/></g></svg>");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, transparent 55%, rgba(0,0,0,0.5) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.font-display { font-family: 'Cinzel Decorative', serif; }
+.font-header { font-family: 'Cormorant Garamond', serif; }
+.font-body { font-family: 'Spectral', serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  background: radial-gradient(ellipse at center, rgba(201, 162, 39, 0.1) 0%, transparent 65%);
+  z-index: 2;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 162, 39, 0.12), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.hero-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.5rem, 9vw, 6.5rem);
+  font-weight: 900;
+  color: var(--gold-bright);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 40px rgba(201, 162, 39, 0.3);
+  margin: 0;
+  text-align: center;
+  line-height: 1.05;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-intro {
+  font-family: 'Spectral', serif;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  font-style: italic;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 2rem auto 0;
+  line-height: 1.8;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-dim);
+  animation: bounce 2s infinite;
+  z-index: 3;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }
+  50% { transform: translateX(-50%) translateY(10px); opacity: 1; }
+}
+
+/* Navigation */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(28, 19, 10, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+  padding: 0.75rem 2rem;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--gold-bright);
+  border-bottom-color: var(--gold);
+}
+
+.gm-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.gm-toggle:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+}
+
+.gm-toggle.active {
+  color: var(--ink);
+  background: var(--gold);
+  border-color: var(--gold);
+  font-weight: 700;
+}
+
+/* Sections */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--gold-bright);
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+  max-width: 200px;
+  gap: 0.75rem;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), transparent);
+}
+
+.divider-icon {
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+}
+
+/* World cards */
+.world-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.world-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.world-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 0.5rem;
+}
+
+.world-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin: 0 0 1rem 0;
+}
+
+.world-card-text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+/* Detail cards */
+.detail-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.detail-card:hover {
+  border-color: var(--gold-dim);
+  transform: translateY(-4px);
+  background: var(--card-hover);
+}
+
+.detail-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-bright);
+}
+
+.detail-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+  margin-bottom: 0.4rem;
+}
+
+.detail-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* Faction cards */
+.faction-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--gold-dim);
+  border-radius: 4px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.faction-card:hover {
+  border-left-color: var(--gold);
+  background: var(--card-hover);
+}
+
+.faction-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+  margin: 0;
+}
+
+.faction-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.3rem;
+}
+
+.faction-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Route map */
+.route-container {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  position: relative;
+}
+
+.route-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.route-svg {
+  display: block;
+  margin: 0 auto;
+  min-width: 820px;
+}
+
+.route-node {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.route-node circle.node-bg {
+  transition: all 0.3s;
+}
+
+.route-node:hover circle.node-bg {
+  filter: drop-shadow(0 0 10px var(--gold));
+}
+
+.route-node.active circle.node-bg {
+  fill: var(--gold-bright);
+  filter: drop-shadow(0 0 15px var(--gold-bright));
+}
+
+.route-node text.node-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  fill: var(--text);
+  font-size: 14px;
+  text-anchor: middle;
+  transition: fill 0.3s;
+}
+
+.route-node.active text.node-label {
+  fill: var(--gold-bright);
+}
+
+.route-node text.node-sub {
+  font-size: 9px;
+  fill: var(--text-dim);
+  font-style: italic;
+  text-anchor: middle;
+}
+
+.location-detail {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 2rem;
+  min-height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-detail::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gold);
+}
+
+.location-detail-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold-bright);
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.location-optional-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--text-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  font-weight: 400;
+}
+
+.location-detail-text {
+  font-size: 1.15rem;
+  color: var(--text);
+  line-height: 1.75;
+  font-style: italic;
+  margin: 0;
+}
+
+/* NPC Cards */
+.npc-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.npc-card:hover {
+  border-color: var(--card-border-bright);
+  transform: translateY(-2px);
+}
+
+.npc-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--card-border);
+  position: relative;
+}
+
+.npc-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-employer { background: rgba(201, 162, 39, 0.15); color: var(--gold-bright); border: 1px solid var(--gold-dim); }
+.badge-ally { background: rgba(74, 103, 65, 0.2); color: #8ab876; border: 1px solid #4a6741; }
+.badge-rival { background: rgba(58, 82, 120, 0.2); color: #7a9ccc; border: 1px solid #3a5278; }
+.badge-antagonist { background: rgba(181, 72, 42, 0.15); color: #d4683a; border: 1px solid var(--terracotta-dark); }
+.badge-authority { background: rgba(139, 58, 31, 0.2); color: #e07a4a; border: 1px solid var(--terracotta-dark); }
+.badge-optional { background: rgba(154, 139, 110, 0.12); color: var(--text-muted); border: 1px solid var(--text-dim); }
+
+.npc-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.npc-role {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+.npc-body {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+}
+
+.npc-field {
+  margin-bottom: 1rem;
+}
+
+.npc-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.npc-value {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Secret reveal */
+.secret-block {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--card-border);
+  border-radius: 2px;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  transition: all 0.3s;
+}
+
+.secret-block.revealed {
+  border-color: var(--terracotta-dark);
+  background: rgba(139, 58, 31, 0.12);
+}
+
+.secret-toggle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold-dim);
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 2px;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+
+.secret-toggle:hover {
+  background: rgba(201, 162, 39, 0.1);
+  border-color: var(--gold);
+  color: var(--gold-bright);
+}
+
+.secret-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, margin-top 0.3s;
+  font-size: 0.9rem;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.6;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--terracotta);
+}
+
+.secret-content.show {
+  max-height: 200px;
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Stats block */
+.stats-block {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--card-border);
+  border-radius: 2px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+}
+
+.stat-label {
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  color: var(--gold-bright);
+  font-weight: 500;
+}
+
+.stats-divider {
+  border-top: 1px solid var(--card-border);
+  margin: 0.3rem 0;
+}
+
+.stat-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.stat-note-highlight {
+  color: var(--gold-bright);
+  font-style: normal;
+}
+
+/* NPC quote */
+.npc-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--gold-bright);
+  padding: 0.75rem 1rem;
+  border-left: 2px solid var(--gold);
+  background: rgba(201, 162, 39, 0.05);
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* Play note */
+.play-note {
+  background: rgba(201, 162, 39, 0.04);
+  border-top: 1px solid var(--card-border);
+  padding: 0.85rem 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.play-note-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-right: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Tunde outcomes */
+.outcome-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
+  border-left: 2px solid var(--gold-dim);
+  border-radius: 2px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.outcome-card:hover {
+  border-left-color: var(--gold);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.outcome-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.outcome-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* GM Tips */
+.tip-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--gold);
+  border-radius: 2px;
+  padding: 1.25rem 1.5rem;
+  transition: all 0.3s;
+}
+
+.tip-card:hover {
+  background: var(--card-hover);
+  border-left-color: var(--gold-bright);
+  transform: translateX(4px);
+}
+
+.tip-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.tip-text {
+  font-size: 0.98rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--text-dim);
+  position: relative;
+  z-index: 2;
+}
+
+.footer-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer-attr {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: var(--text-dim);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* GM Mode - reveals all secrets */
+body.gm-mode .secret-toggle {
+  display: none;
+}
+
+body.gm-mode .secret-content {
+  max-height: 200px;
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+body.gm-mode .secret-block {
+  border-color: var(--terracotta-dark);
+  background: rgba(139, 58, 31, 0.12);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dim);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .nav-links {
+    justify-content: center;
+  }
+  
+  .faction-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .route-svg {
+    min-width: 700px;
+  }
+  
+  .section {
+    padding: 3rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow { animation: none; }
+  .scroll-hint { animation: none; }
+  .reveal { transition: none; opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="text-center relative" style="z-index: 3;">
+    <p class="font-mono text-xs tracking-[0.35em] uppercase mb-6" style="color: var(--gold);">A Tabletop RPG Campaign Sourcebook</p>
+    <h1 class="hero-title">The Caravan<br>Route</h1>
+    <p class="hero-subtitle">Oyo to Ouidah · c. 1760s</p>
+    <div class="divider" style="margin-top: 2rem;">
+      <span class="divider-icon">◆ ◆ ◆</span>
+    </div>
+    <p class="hero-intro">
+      Oyo dominates the region with cavalry and tribute. Dahomey is a disciplined, rising military state that still pays tribute to Oyo. Ouidah is a coastal port where European forts and African brokers run the Atlantic trade. Firearms are spreading. Standing armies and written contracts are slowly replacing freelancers. And somewhere on the road, a caravan moves toward the coast.
+    </p>
+  </div>
+  <div class="scroll-hint">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <div class="nav-links">
+      <button class="nav-link active" data-section="world">The World</button>
+      <button class="nav-link" data-section="factions">Factions</button>
+      <button class="nav-link" data-section="route">The Route</button>
+      <button class="nav-link" data-section="npcs">Dramatis Personae</button>
+      <button class="nav-link" data-section="tips">GM Tips</button>
+    </div>
+    <button class="gm-toggle" id="gmToggle">
+      <span id="gmToggleText">▣ Enter GM Mode</span>
+    </button>
+  </div>
+</nav>
+
+<!-- World Section -->
+<section id="world" class="section">
+  <div class="section-header reveal">
+    <h2 class="section-title">The World in Brief</h2>
+    <p class="section-subtitle">Serious. Grounded. Human.</p>
+    <div class="divider"><span class="divider-icon">◆</span></div>
+  </div>
+  
+  <div class="grid md:grid-cols-2 gap-6 mb-10">
+    <div class="world-card reveal">
+      <div class="world-card-label">The Big Picture</div>
+      <h3 class="world-card-title">Power and Tribute</h3>
+      <p class="world-card-text">
+        Oyo is the dominant power of the region, with the cavalry, tribute states, and political clout. Dahomey is a disciplined, rising military state that still pays tribute to Oyo. Ouidah is a coastal port under Dahomey control, where European forts and African brokers run the Atlantic trade. Firearms are spreading, and standing armies and written contracts are slowly replacing freelancers.
+      </p>
+    </div>
+    <div class="world-card reveal">
+      <div class="world-card-label">Tone</div>
+      <h3 class="world-card-title">Serious, Grounded, Human</h3>
+      <p class="world-card-text">
+        No monsters, no spectacle. The slave trade is the moral weight of the story, shown through people's reactions, objects, and choices rather than graphic scenes. Every character has reasons. Every choice has weight.
+      </p>
+    </div>
+  </div>
+  
+  <div class="reveal" style="text-align: center; margin-bottom: 2rem;">
+    <h3 class="font-header text-2xl font-bold" style="color: var(--cream); font-family: 'Cormorant Garamond', serif;">Everyday Details to Drop In</h3>
+    <p style="color: var(--text-muted); font-style: italic; margin-top: 0.25rem;">The texture of the world</p>
+  </div>
+  
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="detail-card reveal">
+      <div class="detail-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="9" rx="6" ry="4"/><ellipse cx="12" cy="15" rx="6" ry="4"/><path d="M6 9c0 3 3 6 6 6s6-3 6-6"/></svg>
+      </div>
+      <div class="detail-title">Money</div>
+      <div class="detail-text">Cowrie shells, counted in strings.</div>
+    </div>
+    <div class="detail-card reveal">
+      <div class="detail-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M4 6l8 4 8-4M4 14l8 4 8-4"/></svg>
+      </div>
+      <div class="detail-title">Food</div>
+      <div class="detail-text">Yam, millet in the north, palm oil, dried fish, kola nuts.</div>
+    </div>
+    <div class="detail-card reveal">
+      <div class="detail-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="2"/><path d="M8 7v6m0 0l-3 8m3-8l3 8M14 11h6m-6 0V5m6 6V5"/></svg>
+      </div>
+      <div class="detail-title">Travel</div>
+      <div class="detail-text">Porters carrying loads on their heads, a few donkeys in the northern stretch, canoes on rivers.</div>
+    </div>
+    <div class="detail-card reveal">
+      <div class="detail-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v10M8 8c0 2 2 4 4 4s4-2 4-4M12 18v3M9 21h6"/></svg>
+      </div>
+      <div class="detail-title">Greetings</div>
+      <div class="detail-text">Respect matters. People greet elders first, and a poor greeting is an insult.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Factions Section -->
+<section id="factions" class="section">
+  <div class="section-header reveal">
+    <h2 class="section-title">Factions</h2>
+    <p class="section-subtitle">Who wants what, and how they meet the party</p>
+    <div class="divider"><span class="divider-icon">◆</span></div>
+  </div>
+  
+  <div class="grid gap-4">
+    <div class="faction-card reveal">
+      <div>
+        <h3 class="faction-name">The Agent's Network</h3>
+        <p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Silent partners. Quiet money.</p>
+      </div>
+      <div>
+        <div class="faction-label">What They Want</div>
+        <p class="faction-text">Move goods to the coast quietly and profitably.</p>
+        <div class="faction-label" style="margin-top: 0.75rem;">How They Treat the Party</div>
+        <p class="faction-text">Pays well, hides everything.</p>
+      </div>
+    </div>
+    
+    <div class="faction-card reveal">
+      <div>
+        <h3 class="faction-name">The Iron Leopards</h3>
+        <p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Rival company — the "future."</p>
+      </div>
+      <div>
+        <div class="faction-label">What They Want</div>
+        <p class="faction-text">Steady contracts and reputation.</p>
+        <div class="faction-label" style="margin-top: 0.75rem;">How They Treat the Party</div>
+        <p class="faction-text">Polite, patronizing — the "future" of hired fighters.</p>
+      </div>
+    </div>
+    
+    <div class="faction-card reveal">
+      <div>
+        <h3 class="faction-name">The Raiders</h3>
+        <p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Not evil. Desperate.</p>
+      </div>
+      <div>
+        <div class="faction-label">What They Want</div>
+        <p class="faction-text">Stop the caravan, protect their kin.</p>
+        <div class="faction-label" style="margin-top: 0.75rem;">How They Treat the Party</div>
+        <p class="faction-text">Desperate, not evil.</p>
+      </div>
+    </div>
+    
+    <div class="faction-card reveal">
+      <div>
+        <h3 class="faction-name">Dahomey's Military</h3>
+        <p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Order above all.</p>
+      </div>
+      <div>
+        <div class="faction-label">What They Want</div>
+        <p class="faction-text">Order, tribute, control of the route.</p>
+        <div class="faction-label" style="margin-top: 0.75rem;">How They Treat the Party</div>
+        <p class="faction-text">Disciplined, wary of Oyo.</p>
+      </div>
+    </div>
+    
+    <div class="faction-card reveal">
+      <div>
+        <h3 class="faction-name">Ouidah's Brokers</h3>
+        <p class="faction-text" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">The coastal middlemen.</p>
+      </div>
+      <div>
+        <div class="faction-label">What They Want</div>
+        <p class="faction-text">Profit.</p>
+        <div class="faction-label" style="margin-top: 0.75rem;">How They Treat the Party</div>
+        <p class="faction-text">Courteous, practiced, cold.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Route Section -->
+<section id="route" class="section">
+  <div class="section-header reveal">
+    <h2 class="section-title">The Route</h2>
+    <p class="section-subtitle">From the savanna to the sea</p>
+    <div class="divider"><span class="divider-icon">◆</span></div>
+  </div>
+  
+  <div class="route-container reveal">
+    <svg class="route-svg" viewBox="0 0 1200 350" xmlns="http://www.w3.org/2000/svg">
+      <!-- Savanna grass -->
+      <g opacity="0.25">
+        <path d="M 200 120 q 3 -12 6 0 M 215 125 q 3 -12 6 0 M 230 115 q 3 -12 6 0 M 245 122 q 3 -12 6 0 M 260 118 q 3 -12 6 0 M 275 125 q 3 -12 6 0 M 290 115 q 3 -12 6 0" stroke="#c9a227" fill="none" stroke-width="1"/>
+      </g>
+      
+      <!-- Baobab trees -->
+      <g opacity="0.35">
+        <circle cx="180" cy="100" r="10" fill="#4a6741"/>
+        <rect x="177" y="108" width="6" height="8" fill="#6b5e47"/>
+        <circle cx="340" cy="95" r="12" fill="#4a6741"/>
+        <rect x="337" y="105" width="6" height="8" fill="#6b5e47"/>
+      </g>
+      
+      <!-- River -->
+      <g opacity="0.4">
+        <path d="M 440 160 Q 460 210, 480 260" stroke="#3a5278" fill="none" stroke-width="3" opacity="0.6"/>
+        <path d="M 470 195 Q 490 220, 500 255" stroke="#3a5278" fill="none" stroke-width="2" opacity="0.5"/>
+        <text x="490" y="280" fill="#3a5278" font-size="11" font-style="italic" opacity="0.7" font-family="Cormorant Garamond">river</text>
+      </g>
+      
+      <!-- Forest hint -->
+      <g opacity="0.3">
+        <path d="M 570 80 L 575 65 L 580 80 Z M 585 75 L 590 60 L 595 75 Z M 600 80 L 605 62 L 610 80 Z M 615 75 L 620 58 L 625 75 Z" fill="#4a6741"/>
+      </g>
+      
+      <!-- Coast -->
+      <g opacity="0.4">
+        <path d="M 1040 210 Q 1080 220, 1120 210 Q 1160 200, 1200 215" stroke="#3a5278" fill="none" stroke-width="2"/>
+        <path d="M 1040 225 Q 1080 235, 1120 225 Q 1160 215, 1200 230" stroke="#3a5278" fill="none" stroke-width="1.5"/>
+        <path d="M 1040 240 Q 1080 248, 1120 240 Q 1160 233, 1200 245" stroke="#3a5278" fill="none" stroke-width="1"/>
+        <text x="1150" y="195" fill="#3a5278" font-size="11" font-style="italic" opacity="0.7" font-family="Cormorant Garamond">the sea</text>
+      </g>
+      
+      <!-- Main route path -->
+      <path d="M 80 180 Q 150 160, 220 150 Q 290 170, 350 185 Q 410 200, 470 195 Q 530 190, 620 195 Q 720 200, 800 210 Q 900 222, 1000 230 Q 1040 235, 1080 240" 
+            stroke="#c9a227" stroke-width="2" fill="none" stroke-dasharray="7,5" opacity="0.55"/>
+      
+      <!-- Optional path to forest -->
+      <path d="M 500 195 Q 550 155, 600 115" 
+            stroke="#9a8b6e" stroke-width="1.5" fill="none" stroke-dasharray="3,6" opacity="0.5"/>
+      
+      <!-- Location nodes -->
+      <g class="route-node" data-location="oyo" onclick="selectLocation('oyo')">
+        <circle class="node-bg" cx="80" cy="180" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/>
+        <circle cx="80" cy="180" r="5" fill="#c9a227" opacity="0.7"/>
+        <text class="node-label" x="80" y="155">Oyo Market Town</text>
+      </g>
+      
+      <g class="route-node" data-location="savanna" onclick="selectLocation('savanna')">
+        <circle class="node-bg" cx="290" cy="160" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/>
+        <circle cx="290" cy="160" r="5" fill="#c9a227" opacity="0.7"/>
+        <text class="node-label" x="290" y="135">The Savanna</text>
+      </g>
+      
+      <g class="route-node" data-location="river" onclick="selectLocation('river')">
+        <circle class="node-bg" cx="480" cy="195" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/>
+        <circle cx="480" cy="195" r="5" fill="#c9a227" opacity="0.7"/>
+        <text class="node-label" x="480" y="225">River Village</text>
+      </g>
+      
+      <g class="route-node" data-location="forest" onclick="selectLocation('forest')">
+        <circle class="node-bg" cx="600" cy="115" r="12" fill="#2a1f12" stroke="#9a8b6e" stroke-width="2" stroke-dasharray="3,2"/>
+        <circle cx="600" cy="115" r="4" fill="#9a8b6e" opacity="0.7"/>
+        <text class="node-label" x="600" y="95" fill="#9a8b6e">Forest Village</text>
+        <text class="node-sub" x="600" y="135">optional</text>
+      </g>
+      
+      <g class="route-node" data-location="dahomey" onclick="selectLocation('dahomey')">
+        <circle class="node-bg" cx="800" cy="210" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/>
+        <circle cx="800" cy="210" r="5" fill="#c9a227" opacity="0.7"/>
+        <text class="node-label" x="800" y="240">Dahomey Clearing</text>
+      </g>
+      
+      <g class="route-node" data-location="ouidah" onclick="selectLocation('ouidah')">
+        <circle class="node-bg" cx="1080" cy="240" r="14" fill="#2a1f12" stroke="#c9a227" stroke-width="2"/>
+        <circle cx="1080" cy="240" r="5" fill="#c9a227" opacity="0.7"/>
+        <text class="node-label" x="1080" y="270">Ouidah</text>
+      </g>
+    </svg>
+  </div>
+  
+  <div class="location-detail reveal" id="locationDetail">
+    <p style="color: var(--text-muted); font-style: italic; text-align: center; margin: 0;">Click a location on the map to see its detail.</p>
+  </div>
+</section>
+
+<!-- NPCs Section -->
+<section id="npcs" class="section">
+  <div class="section-header reveal">
+    <h2 class="section-title">Dramatis Personae</h2>
+    <p class="section-subtitle">The people the party will meet</p>
+    <div class="divider"><span class="divider-icon">◆</span></div>
+  </div>
+  
+  <p class="reveal" style="text-align: center; color: var(--text-muted); font-style: italic; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+    Each card holds a secret. Click <span style="color: var(--gold);">"Reveal Secret"</span> to see what the GM knows — or enter GM Mode at the top to reveal everything at once.
+  </p>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    
+    <!-- AJANI -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-employer">Employer</span>
+        <h3 class="npc-name">Ajani</h3>
+        <p class="npc-role">The Agent — the party's employer</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Look</div>
+          <div class="npc-value">Well-dressed, rings on his fingers, always wiping his hands.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">Get paid and keep his name out of it.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Fear / Secret</div>
+          <div class="secret-block">
+            <button class="secret-toggle" onclick="toggleSecret(this)">▣ Reveal Secret</button>
+            <div class="secret-content">He owes a large debt to the Ouidah recipient and is using the caravan to settle it.</div>
+          </div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Smooth, friendly, quick to say "of course, of course." Gets sharper when pressed.</div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Health</span><span class="stat-value">8</span></div>
+          <div class="stats-row"><span class="stat-label">Defense</span><span class="stat-value">10</span></div>
+          <div class="stats-row"><span class="stat-label">Attack Bonus</span><span class="stat-value">+1</span></div>
+          <div class="stats-row"><span class="stat-label">Damage</span><span class="stat-value">2</span></div>
+          <div class="stats-divider"></div>
+          <div class="stats-row"><span class="stat-label">Guards (3–4)</span><span class="stat-value">8 / 11 / +3 / 3</span></div>
+        </div>
+        <p class="stat-note">Prefers his guards to fight.</p>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        He's not a monster. He tells himself it's just business, which is the point.
+      </div>
+    </div>
+    
+    <!-- ADUNNI -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-ally">Ally</span>
+        <h3 class="npc-name">Adunni</h3>
+        <p class="npc-role">The Healer — a mysterious healer who joins the group</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">To find her son Tunde.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Fear / Secret</div>
+          <div class="secret-block">
+            <button class="secret-toggle" onclick="toggleSecret(this)">▣ Reveal Secret</button>
+            <div class="secret-content">Her remedies work faster than they should, and she doesn't know why. She's afraid it will cost her something.</div>
+          </div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Quiet, warm, proverbs half-spoken. Never explains herself.</div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Health</span><span class="stat-value">8</span></div>
+          <div class="stats-row"><span class="stat-label">Defense</span><span class="stat-value">10</span></div>
+          <div class="stats-row"><span class="stat-label">Attack Bonus</span><span class="stat-value">+0</span></div>
+        </div>
+        <p class="stat-note"><span class="stat-note-highlight">She heals, doesn't fight.</span> Her touch restores 3 Health, once per scene.</p>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        Never confirm or deny the unexplained. Let each player decide what they saw.
+      </div>
+    </div>
+    
+    <!-- TUNDE -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-ally">Ally</span>
+        <h3 class="npc-name">Tunde</h3>
+        <p class="npc-role">Adunni's Son — the reason for the journey</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">Survive.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Tired, guarded, brief sentences.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Outcomes — Choose Based on the Group's Tone</div>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-label">Hopeful</div>
+          <div class="outcome-text">Held in a pen and can be freed.</div>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-label">Bittersweet</div>
+          <div class="outcome-text">Already shipped, but a broker knows which ship. The players give Adunni a name and a direction.</div>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-label">Complex</div>
+          <div class="outcome-text">Working for the brokers to stay alive, and ashamed to face his mother.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOLARIN -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-antagonist">Antagonist</span>
+        <h3 class="npc-name">Folarin</h3>
+        <p class="npc-role">The Raider Leader — leads the savanna ambush</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">Stop the caravan before it reaches the coast.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Fear / Secret</div>
+          <div class="secret-block">
+            <button class="secret-toggle" onclick="toggleSecret(this)">▣ Reveal Secret</button>
+            <div class="secret-content">Her village's people were taken by a caravan like this one. She recognized the agent's seal.</div>
+          </div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Angry, direct, stops short of explaining.</div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Leader (Folarin)</span><span class="stat-value">10 / 12 / +4 / 3</span></div>
+          <div class="stats-divider"></div>
+          <div class="stats-row"><span class="stat-label">Raiders (4–5)</span><span class="stat-value">6 / 11 / +3 / 2</span></div>
+        </div>
+        <p class="stat-note">They flee after two of their number fall.</p>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        If a player captures or talks to her, she can later appear at Ouidah as an ally, or as a witness against the agent.
+      </div>
+    </div>
+    
+    <!-- CAPTAIN OYENIYI -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-rival">Rival</span>
+        <h3 class="npc-name">Captain Oyeniyi</h3>
+        <p class="npc-role">The Iron Leopards — Captain, the "future"</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Look</div>
+          <div class="npc-value">Smiles often, speaks like a recruiter. Tidy gear, matching cloth bands.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">Steady contracts and reputation. Genuinely believes in discipline and pay.</div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Health</span><span class="stat-value">12</span></div>
+          <div class="stats-row"><span class="stat-label">Defense</span><span class="stat-value">12</span></div>
+          <div class="stats-row"><span class="stat-label">Attack Bonus</span><span class="stat-value">+4</span></div>
+          <div class="stats-row"><span class="stat-label">Damage</span><span class="stat-value">3</span></div>
+          <div class="stats-divider"></div>
+          <div class="stats-row"><span class="stat-label">Other Leopards (3)</span><span class="stat-value">8 / 11 / +3 / 3</span></div>
+        </div>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        The Captain should feel respectable, not cartoonish. The contrast with the players is the point.
+      </div>
+    </div>
+    
+    <!-- KUNLE -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-rival">Rival</span>
+        <h3 class="npc-name">Kunle</h3>
+        <p class="npc-role">The Iron Leopards — the uneasy member</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Look</div>
+          <div class="npc-value">Young, newer to the company.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">To belong — but he notices what they're protecting at Ouidah and can't ignore it.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Possible Arcs</div>
+          <div class="npc-value">Can be won over. Can tip off the players. Can quietly look away.</div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Health</span><span class="stat-value">10</span></div>
+          <div class="stats-row"><span class="stat-label">Defense</span><span class="stat-value">11</span></div>
+          <div class="stats-row"><span class="stat-label">Attack Bonus</span><span class="stat-value">+3</span></div>
+          <div class="stats-row"><span class="stat-label">Damage</span><span class="stat-value">3</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- BABA OGUNSOLA -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-ally">Waystation</span>
+        <h3 class="npc-name">Baba Ogunsola</h3>
+        <p class="npc-role">The Fisherman — at the river village</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">Be left alone, and keep his family safe.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Weathered, slow to trust, short sentences.</div>
+        </div>
+        <div class="npc-quote">"We've seen caravans like yours."</div>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        He'll help for a fair price or a kindness, not for threats. A player who treats him with respect gets the canoes at a discount.
+      </div>
+    </div>
+    
+    <!-- IYA AGBA -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-optional">Optional</span>
+        <h3 class="npc-name">Iya Agba</h3>
+        <p class="npc-role">The Forest Elder — optional scene</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">To warn without accusing.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Gentle, proverb-heavy, seemingly unhurried.</div>
+        </div>
+        <div class="npc-quote">"Some things cannot be washed off."</div>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        She gives the party a small gift (food, a charm, a piece of cloth), which makes later choices hit harder.
+      </div>
+    </div>
+    
+    <!-- CAPTAIN GBENU -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-authority">Authority</span>
+        <h3 class="npc-name">Captain Gbenu</h3>
+        <p class="npc-role">The Dahomey Commander — leads the standoff. An Agojie officer.</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">Keep order and avoid an incident with Oyo.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Fear / Secret</div>
+          <div class="secret-block">
+            <button class="secret-toggle" onclick="toggleSecret(this)">▣ Reveal Secret</button>
+            <div class="secret-content">She dislikes what Ouidah has become but follows orders.</div>
+          </div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Short, formal, no wasted words. Never raises her voice.</div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Commander (Gbenu)</span><span class="stat-value">12 / 13 / +5 / 3</span></div>
+          <div class="stats-divider"></div>
+          <div class="stats-row"><span class="stat-label">Agojie (2–3)</span><span class="stat-value">10 / 13 / +5 / 3</span></div>
+          <div class="stats-row"><span class="stat-label">Soldiers (6–8)</span><span class="stat-value">8 / 12 / +4 / 3</span></div>
+        </div>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        Make her impressive, not cruel. The party should come away feeling small, not insulted. The Agojie were professional soldiers within a kingdom that took part in the trade, and that can be shown by what she does and doesn't say.
+      </div>
+    </div>
+    
+    <!-- SENHOR DUARTE -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-authority">Authority</span>
+        <h3 class="npc-name">Senhor Duarte</h3>
+        <p class="npc-role">The Ouidah Recipient — an Afro-Portuguese broker, one of the coastal middlemen</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Want</div>
+          <div class="npc-value">The cargo, the papers, and no loose ends.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Voice</div>
+          <div class="npc-value">Courteous, speaks several languages, offers food and water as if hospitality hides everything.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Fear / Secret</div>
+          <div class="secret-block">
+            <button class="secret-toggle" onclick="toggleSecret(this)">▣ Reveal Secret</button>
+            <div class="secret-content">He expects the agent to be late with the debt. If the players expose the agent, Duarte is likely to protect himself first.</div>
+          </div>
+        </div>
+        <div class="stats-block">
+          <div class="stats-row"><span class="stat-label">Health</span><span class="stat-value">8</span></div>
+          <div class="stats-row"><span class="stat-label">Defense</span><span class="stat-value">10</span></div>
+          <div class="stats-row"><span class="stat-label">Attack Bonus</span><span class="stat-value">+1</span></div>
+          <div class="stats-row"><span class="stat-label">Damage</span><span class="stat-value">2</span></div>
+          <div class="stats-divider"></div>
+          <div class="stats-row"><span class="stat-label">Guards (3–4)</span><span class="stat-value">8 / 11 / +3 / 3</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- YOVOGAN'S OFFICIAL -->
+    <div class="npc-card reveal">
+      <div class="npc-header">
+        <span class="npc-badge badge-optional">Optional</span>
+        <h3 class="npc-name">The Yovogan's Official</h3>
+        <p class="npc-role">Dahomey's representative in Ouidah</p>
+      </div>
+      <div class="npc-body">
+        <div class="npc-field">
+          <div class="npc-label">Role</div>
+          <div class="npc-value">A tidy, tired bureaucrat who checks papers and collects fees.</div>
+        </div>
+        <div class="npc-field">
+          <div class="npc-label">Use</div>
+          <div class="npc-value">A neutral authority the players can appeal to, bribe, or avoid.</div>
+        </div>
+      </div>
+      <div class="play-note">
+        <span class="play-note-label">GM Note</span>
+        If a player tries to expose the agent, the official may care more about the paperwork than the crimes, which is its own grim lesson.
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- GM Tips Section -->
+<section id="tips" class="section">
+  <div class="section-header reveal">
+    <h2 class="section-title">Quick Tips for Running NPCs</h2>
+    <p class="section-subtitle">For the Game Master's eyes</p>
+    <div class="divider"><span class="divider-icon">◆</span></div>
+  </div>
+  
+  <div class="grid gap-4">
+    <div class="tip-card reveal">
+      <div class="tip-label">One Detail, One Line</div>
+      <p class="tip-text">Give each NPC one physical detail and one line of speech. That's enough to be memorable.</p>
+    </div>
+    <div class="tip-card reveal">
+      <div class="tip-label">Let Them Want</div>
+      <p class="tip-text">Let NPCs want things. If the players don't engage, they still act.</p>
+    </div>
+    <div class="tip-card reveal">
+      <div class="tip-label">Don't Show Every Secret</div>
+      <p class="tip-text">Reveal them through objects and reactions, not exposition.</p>
+    </div>
+    <div class="tip-card reveal">
+      <div class="tip-label">Let Players Change NPCs</div>
+      <p class="tip-text">If someone shows Folarin respect, she should treat them differently later.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p class="footer-quote">"Some things cannot be washed off."</p>
+  <p class="footer-attr">— Iya Agba, Forest Elder</p>
+</footer>
+
+<script>
+// === Navigation ===
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const targetId = link.dataset.section;
+    const target = document.getElementById(targetId);
+    if (target) {
+      const offset = 60;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+
+// Active section on scroll
+function updateActiveNav() {
+  const scrollPos = window.scrollY + 120;
+  let currentId = '';
+  sections.forEach(section => {
+    if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+      currentId = section.id;
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.dataset.section === currentId);
+  });
+}
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+// === Secret Reveal ===
+function toggleSecret(button) {
+  const content = button.nextElementSibling;
+  const isShown = content.classList.contains('show');
+  if (isShown) {
+    content.classList.remove('show');
+    button.textContent = '▣ Reveal Secret';
+    button.parentElement.classList.remove('revealed');
+  } else {
+    content.classList.add('show');
+    button.textContent = '▼ Secret Revealed';
+    button.parentElement.classList.add('revealed');
+  }
+}
+
+// === GM Mode ===
+const gmToggle = document.getElementById('gmToggle');
+const gmToggleText = document.getElementById('gmToggleText');
+
+gmToggle.addEventListener('click', () => {
+  const body = document.body;
+  const isGM = body.classList.toggle('gm-mode');
+  
+  if (isGM) {
+    gmToggle.classList.add('active');
+    gmToggleText.textContent = '▼ GM Mode Active';
+    document.querySelectorAll('.secret-block').forEach(block => block.classList.add('revealed'));
+    document.querySelectorAll('.secret-content').forEach(content => content.classList.add('show'));
+    document.querySelectorAll('.secret-toggle').forEach(button => button.textContent = '▼ Secret Revealed');
+  } else {
+    gmToggle.classList.remove('active');
+    gmToggleText.textContent = '▣ Enter GM Mode';
+    document.querySelectorAll('.secret-block').forEach(block => block.classList.remove('revealed'));
+    document.querySelectorAll('.secret-content').forEach(content => content.classList.remove('show'));
+    document.querySelectorAll('.secret-toggle').forEach(button => button.textContent = '▣ Reveal Secret');
+  }
+});
+
+// === Route Map ===
+const locations = {
+  oyo: {
+    name: 'The Oyo Market Town',
+    text: 'Red dust, a huge silk-cotton tree shading the square, drummers practicing, traders shouting prices. Sells everything except work for hired fighters.',
+    optional: false
+  },
+  savanna: {
+    name: 'The Savanna',
+    text: 'Golden grass taller than a person, scattered baobabs, heat that makes the horizon shimmer. Great for ambushes.',
+    optional: false
+  },
+  river: {
+    name: 'The River Village',
+    text: 'Mud-brick houses, drying fish racks, and smoke where roofs used to be. Canoes pulled up on the bank.',
+    optional: false
+  },
+  forest: {
+    name: 'The Forest Village',
+    text: 'Cool green shade, the smell of woodsmoke and palm wine, children staring at strangers.',
+    optional: true
+  },
+  dahomey: {
+    name: 'The Dahomey Clearing',
+    text: 'A wide, deliberately cleared stretch of ground where the soldiers stand in ranks. Silent, orderly, no shouting. The quiet is the threat.',
+    optional: false
+  },
+  ouidah: {
+    name: 'Ouidah',
+    text: 'Salt wind, whitewashed European forts, shouting brokers, and a long road to the beach that everyone avoids looking at.',
+    optional: false
+  }
+};
+
+function selectLocation(id) {
+  const loc = locations[id];
+  if (!loc) return;
+  
+  document.querySelectorAll('.route-node').forEach(node => {
+    node.classList.toggle('active', node.dataset.location === id);
+  });
+  
+  const detail = document.getElementById('locationDetail');
+  const optionalTag = loc.optional 
+    ? '<span class="location-optional-tag">Optional Scene</span>' 
+    : '';
+  
+  detail.innerHTML = `
+    <h3 class="location-detail-name">${loc.name}${optionalTag}</h3>
+    <p class="location-detail-text">${loc.text}</p>
+  `;
+}
+
+// === Scroll Reveal ===
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Initialize with first location selected
+selectLocation('oyo');
+</script>
+
+</body>
+</html>

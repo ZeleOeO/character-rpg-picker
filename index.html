@@ -25,26 +25,6 @@
         <div id="character-grid" class="grid"></div>
     </section>
 
-    <!-- ── GM Dashboard ── -->
-    <section id="gm-view" class="view hidden">
-        <h2>GM Dashboard</h2>
-
-        <div class="gm-tabs">
-            <button class="tab-btn active" data-tab="gm-chars">Characters</button>
-            <button class="tab-btn"        data-tab="gm-npcs">NPCs</button>
-            <button class="tab-btn"        data-tab="gm-notes-tab">Notes</button>
-        </div>
-
-        <div id="gm-chars"     class="tab-content"></div>
-        <div id="gm-npcs"      class="tab-content hidden"></div>
-        <div id="gm-notes-tab" class="tab-content hidden">
-            <div class="gm-notes">
-                <h3>Campaign Notes</h3>
-                <textarea id="gm-notes-area" placeholder="Session notes, player observations, upcoming beats…"></textarea>
-            </div>
-        </div>
-    </section>
-
 </main>
 
 <!-- ── Character Detail Modal ── -->
@@ -57,7 +37,7 @@
 </div>
 
 <footer class="site-footer">
-    <button class="secret-btn" id="gm-toggle-btn" aria-label="GM access" title="GM access">⚙</button>
+    <a href="gm.html" class="secret-btn" aria-label="GM access" title="GM access" style="text-decoration:none;">⚙</a>
 </footer>
 
 <!-- Firebase compat SDK (no build step required) -->
