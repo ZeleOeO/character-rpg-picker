@@ -1674,6 +1674,14 @@ gmToggle.addEventListener('click', () => {
   }
 });
 
+// Auto-activate GM mode if they came from the main page after typing the password
+if (sessionStorage.getItem('isGM') === 'true') {
+  document.body.classList.add('gm-mode');
+  gmToggle.classList.add('active');
+  gmToggleText.textContent = '▼ GM Mode Active';
+  // Secrets will be auto-revealed when rendered via Firebase or CSS
+}
+
 // === Route Map ===
 const locations = {
   oyo: {

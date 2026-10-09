@@ -134,6 +134,18 @@ const App = {
 
     init() {
         this.cacheDOM();
+        this.$gmToggle = document.getElementById('gm-toggle-btn');
+        if (this.$gmToggle) {
+            this.$gmToggle.addEventListener('click', () => {
+                const pass = prompt('GM passphrase:');
+                if (pass && pass.toLowerCase().trim() === 'mango') {
+                    sessionStorage.setItem('isGM', 'true');
+                    window.location.href = 'gm.html';
+                } else if (pass !== null) {
+                    alert('Incorrect passphrase.');
+                }
+            });
+        }
         this.applySettings();
         this.bindEvents();
         this.renderGallery();       // render immediately (no waiting for Firebase)

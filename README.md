@@ -21,11 +21,7 @@ Each character in `campaignData.characters` requires the following fields:
 - `publicBackstory`: Text visible to all players.
 - `gmSecrets`, `gmHooks`: Text visible only in the GM view.
 
-## GM View
-To access the GM view, scroll to the bottom of the page and click the faint `π` symbol in the footer. 
-**Passphrase:** `mango`
 
-> **Note on Security:** The GM passphrase is a simple client-side check meant to prevent accidental spoilers for casual players. It is not real security! Anyone who inspects the page source or `data.js` file can see all GM secrets.
 
 ## How to Host for Free
 Since this is a static site (HTML/CSS/JS only), you can host it for free easily:
@@ -42,13 +38,3 @@ Since this is a static site (HTML/CSS/JS only), you can host it for free easily:
 2. Drag and drop the folder containing these files into the upload box.
 3. Netlify will instantly provide a live URL for your site.
 
-## Phase 2: Setting up Firebase (For Live Shared Claiming)
-Currently, claiming is handled locally in your browser's storage (Phase 1). To make claims sync live across all players' devices (Phase 2), follow these steps:
-
-1. Go to the [Firebase Console](https://console.firebase.google.com/) and click **"Add project"**. Name it whatever you like.
-2. Disable Google Analytics (you don't need it).
-3. Once the project is created, click the **Web icon (</>)** to register an app. Name it and click "Register app".
-4. Firebase will show you a block of code with your `firebaseConfig`. **Save this configuration!** You will need to provide these keys.
-5. Go to **Build > Realtime Database** in the left menu and click "Create Database".
-6. Start in **Test mode** (or set up basic rules later so anyone can read/write).
-7. Reply to me with the `firebaseConfig` snippet, and I will update `app.js` and `index.html` to integrate Firebase for live syncing!
