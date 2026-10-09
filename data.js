@@ -61,6 +61,7 @@ const campaignData = {
             aspect:  "Calm when everyone else panics",
 
             stats: { Might: 3, Agility: 1, Endurance: 2, Wits: 2, Presence: 1, Insight: 0 },
+            health: 12,
 
             skills: ["Spear fighting", "Battle tactics", "Intimidating stare", "Long marches"],
 
@@ -95,6 +96,7 @@ const campaignData = {
             aspect:  "Patient listener, easy to confide in",
 
             stats: { Might: 0, Agility: 1, Endurance: 1, Wits: 2, Presence: 2, Insight: 3 },
+            health: 11,
 
             skills: ["Herbs and medicine", "Reading people", "Proverbs and lore", "Staying calm under pressure"],
 
@@ -129,6 +131,7 @@ const campaignData = {
             aspect:  "Remembers every number and face",
 
             stats: { Might: 0, Agility: 1, Endurance: 1, Wits: 2, Presence: 3, Insight: 2 },
+            health: 11,
 
             skills: ["Haggling", "Languages (Yoruba, Fon, trade Hausa)", "Memory and counting", "Spotting lies"],
 
@@ -163,6 +166,7 @@ const campaignData = {
             aspect:  "Commands attention without trying",
 
             stats: { Might: 1, Agility: 1, Endurance: 0, Wits: 2, Presence: 3, Insight: 2 },
+            health: 10,
 
             skills: ["Court etiquette", "Oratory", "Reading nobles and officials", "Ceremonial lore"],
 
@@ -197,6 +201,7 @@ const campaignData = {
             aspect:  "Can fix almost anything made of metal",
 
             stats: { Might: 3, Agility: 0, Endurance: 2, Wits: 2, Presence: 1, Insight: 1 },
+            health: 12,
 
             skills: ["Metalwork and repairs", "Hauling and lifting", "Judging quality of goods", "Hammer fighting"],
 
@@ -231,6 +236,7 @@ const campaignData = {
             aspect:  "Always knows the quickest way out",
 
             stats: { Might: 0, Agility: 3, Endurance: 1, Wits: 2, Presence: 1, Insight: 2 },
+            health: 11,
 
             skills: ["Stealth and sneaking", "Picking locks and pockets", "Spotting danger", "Quick talking"],
 

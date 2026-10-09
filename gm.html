@@ -1797,6 +1797,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="npc-label">Concept</div>
             <div class="npc-value">${char.concept}</div>
           </div>
+          <div class="stats-block">
+            <div class="stats-row"><span class="stat-label">Health</span><span class="stat-value">${char.health || (10 + (char.stats.Endurance || 0))}</span></div>
+          </div>
           <div class="npc-field">
             <div class="npc-label">Secret & Hooks</div>
             <div class="secret-block">

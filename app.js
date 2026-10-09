@@ -331,12 +331,21 @@ const App = {
 
             <div class="sheet-section">
                 <h3>Stats</h3>
-                <div class="defense-banner">
-                    <div>
-                        <span class="defense-label">Defense</span>
-                        <span class="defense-value">${defense}</span>
+                <div style="display:flex; gap:1rem; margin-bottom:1rem; flex-wrap:wrap;">
+                    <div class="defense-banner" style="flex:1; min-width:120px; margin-bottom:0;">
+                        <div>
+                            <span class="defense-label">Defense</span>
+                            <span class="defense-value">${defense}</span>
+                        </div>
+                        <span class="defense-note">10 + Agility${hasShield ? ' + shield' : ''}</span>
                     </div>
-                    <span class="defense-note">10 + Agility${hasShield ? ' + shield' : ''}</span>
+                    <div class="defense-banner" style="flex:1; min-width:120px; margin-bottom:0; border-left-color: var(--terracotta); background: rgba(181, 72, 42, 0.08);">
+                        <div>
+                            <span class="defense-label" style="color: var(--terracotta)">Health</span>
+                            <span class="defense-value">${char.health || (10 + (char.stats.Endurance || 0))}</span>
+                        </div>
+                        <span class="defense-note">10 + Endurance</span>
+                    </div>
                 </div>
                 <div class="stats-grid">${statsHtml}</div>
             </div>
