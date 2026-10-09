@@ -405,10 +405,35 @@ const App = {
             }, 0);
         } else if (claimed) {
             el.innerHTML = `<button class="btn" disabled>Claimed by ${claimerName}</button>`;
-        } else {
+        } else if (currentUsername) {
+            // Already have a username — claim directly
             el.innerHTML = `
                 <button class="btn btn-claim"
                         onclick="App.claim('${char.id}')">Claim this Character</button>`;
+        } else {
+            // No username yet — ask inline (browser blocks prompt() on HTTPS)
+            el.innerHTML = `
+                <div class="name-editor">
+                    <label for="player-name-input">Your name (so others know who claimed this)</label>
+                    <div class="name-editor-row">
+                        <input id="player-name-input"
+                               type="text"
+                               placeholder="Enter your name…"
+                               maxlength="40"
+                               autocomplete="off">
+                        <button class="btn-save-name"
+                                onclick="App.claimWithName('${char.id}')">Claim</button>
+                    </div>
+                </div>`;
+            setTimeout(() => {
+                const input = document.getElementById('player-name-input');
+                if (input) {
+                    input.focus();
+                    input.addEventListener('keydown', e => {
+                        if (e.key === 'Enter') App.claimWithName('${char.id}');
+                    });
+                }
+            }, 0);
         }
     },
 
@@ -421,12 +446,22 @@ const App = {
     // ── Claiming ──────────────────────────────────────────────
 
     claim(charId) {
-        if (!currentUsername) {
-            const name = prompt('Enter your name so others know who claimed this:');
-            if (!name || !name.trim()) return;
-            currentUsername = name.trim();
-            localStorage.setItem('rpg_username', currentUsername);
+        // currentUsername must already be set before calling this
+        if (!currentUsername) return;
+        claimsRef.child(charId).set(currentUsername);
+    },
+
+    claimWithName(charId) {
+        const input = document.getElementById('player-name-input');
+        if (!input) return;
+        const name = input.value.trim();
+        if (!name) {
+            input.style.borderColor = 'var(--accent-ochre)';
+            input.focus();
+            return;
         }
+        currentUsername = name;
+        localStorage.setItem('rpg_username', currentUsername);
         claimsRef.child(charId).set(currentUsername);
     },
 
